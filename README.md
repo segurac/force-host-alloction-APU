@@ -1,9 +1,9 @@
 # force-host-alloction-APU
 Inspired by https://github.com/pomoke/torch-apu-helper
 
-ROCm does not take GTT into account when calculating usable VRAM on APU platforms.
+PyTorch with ROCm does not take GTT into account when calculating usable VRAM on APU platforms.
 
-With this library, by leveraging LD_PRELOAD now we can intercept calls to hipMalloc and forward them into hipHostMalloc dynamically, without needing to change the original python code.
+With this library, by leveraging LD_PRELOAD now we can intercept calls to hipMalloc and forward them into hipHostMalloc dynamically, without needing to change the original PyTorch code.
 
 Works great with PyTorch to use GTT (hostmemory),  and there is no need to tweak VRAM configuration.
 
