@@ -32,7 +32,7 @@ LD_PRELOAD=./libforcegttalloc.so  HSA_OVERRIDE_GFX_VERSION=9.0.0 python test/dif
 
 Check that everything is working as expected with 'rocm-smi'.
 
-This takes around 2 minutes to generate in the iGPU and around 3 minutes in the CPU.
+This takes around 2 minutes to generate in my iGPU and around 3 minutes in my CPU.
 
 If you have something work or not work with HIP on APUs, please share it in discussion.
 
