@@ -23,7 +23,8 @@ Then, for programs using PyTorch, you will need to use 'LD_PRELOAD' to reroute h
 
 ## Checking that it works with Stable Diffusion
 
-```python3 -m venv diffuser_env
+```
+python3 -m venv diffuser_env
 source diffuser_env/bin/activate
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.7
 pip install --upgrade diffusers transformers scipy ftfy accelerate
