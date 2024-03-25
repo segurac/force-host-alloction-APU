@@ -11,7 +11,7 @@ Works great with PyTorch to use GTT (hostmemory),  and there is no need to tweak
 
 ```sudo apt install rocminfo rocm-smi rocm-device-libs hipcc```
 
-### System configuration provided by users:
+### System configuration for Ubuntu provided by another user. [User report](https://github.com/segurac/force-host-alloction-APU/issues/1#issuecomment-2013727581) :
 
 Links to ROCm and PyTorch versions I used:
 [https://www.amd.com/en/support/linux-drivers](https://www.amd.com/en/support/linux-drivers)
