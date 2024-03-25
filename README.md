@@ -19,12 +19,20 @@ Links to ROCm and PyTorch versions I used:
 
 ROCm 5.7 with PyTorch for 5.7
 ```
-https://repo.radeon.com/amdgpu-install/5.7.3/ubuntu/jammy/amdgpu-install_5.7.50703-1_all.deb
+sudo apt update
+wget https://repo.radeon.com/amdgpu-install/5.7.3/ubuntu/jammy/amdgpu-install_5.7.50703-1_all.deb
+sudo apt install ./amdgpu-install_5.7.50703-1_all.deb
+sudo amdgpu-install -y --usecase=graphics,rocm
+sudo usermod -a -G render,video $LOGNAME
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.7
 ```
 ROCm 6.0 with PyTorch for 6.0
 ```
-https://repo.radeon.com/amdgpu-install/23.40.2/ubuntu/jammy/amdgpu-install_6.0.60002-1_all.deb
+sudo apt update
+wget https://repo.radeon.com/amdgpu-install/23.40.2/ubuntu/jammy/amdgpu-install_6.0.60002-1_all.deb
+sudo apt install ./amdgpu-install_6.0.60002-1_all.deb
+sudo amdgpu-install -y --usecase=graphics,rocm
+sudo usermod -a -G render,video $LOGNAME
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/rocm6.0
 ```
 
