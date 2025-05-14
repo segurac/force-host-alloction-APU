@@ -1,4 +1,4 @@
-# force-host-alloction-APU
+# force-host-allocation-APU
 Inspired by https://github.com/pomoke/torch-apu-helper
 
 PyTorch with ROCm does not take GTT into account when calculating usable VRAM on APU platforms.
